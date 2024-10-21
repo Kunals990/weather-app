@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    
+
+    <div>
+        <h1 class="title">Weather  </h1>
+        <img class="sunImage"src="./assets/images/Untitled design (5) 1.png" alt="">
+        <img class="cloudImage1"src="./assets/images/clouds 2.png" alt="">
+        <img class="cloudImage2"src="./assets/images/clouds 2.png" alt="">
+        <!-- Music Gif -->
+         <div class="gif">
+            <img class="gifImage"src="./assets/gif/music_gif.gif" alt="">
+         </div>
+
+        <!-- Buttons -->
+        <div class="buttonClass">
+            
+                <button class="yourWeatherbutton">
+                    Your Weather
+                </button>
+            
+            
+            <button id="searchWeatherbutton">
+                Search Weather
+            </button>
+
+        </div>
+        
+        <div class="yourWeatherPage">
+                <!-- Your Weather -->
+            <div class="yourWeather active">
+
+                <div class="mainTextDiv">
+                    <p class="mainText">Yavatmal</p>
+                    <img class="flag"src="https://flagsapi.com/IN/flat/64.png">
+                </div>
+                <div class="tempDiv">
+                    <p class="tempPara">28.7°</p>
+                    <p class="tempPara2">C</p>
+    
+                </div>
+    
+                <div class="attributeCollection">
+                    <div class="attribute" >
+                        <img class="windSpeedLogo"src="./assets/images/solar_wind-bold.svg" alt="">
+                        <p class="windSpeed" >Windspeed</p>
+                        <p class="windSpeedValue" id="wind">2.00m/s</p>
+                    </div>
+                    <div class="attribute" >
+                        <img class="windSpeedLogo" src="./assets/images/humidity_logo.svg" alt="">
+                        <p class="windSpeed" >Humidity</p>
+                        <p class="windSpeedValue" id="humid">80%</p>
+                    </div>
+                    <div class="attribute" >
+                        <img class="windSpeedLogo" src="./assets/images/clouds-fill.svg" alt="">
+                        <p class="windSpeed" >Clouds</p>
+                        <p class="windSpeedValue" id="cloud">88%</p>
+                    </div>
+                </div>
+          
+            </div >
+
+            
+
+        </div>
+        
+        <!-- Geolacation -->
+        <div class="geolocation active">
+            <img class="geolocationImage" src="./assets/images/mdi_location.svg" alt="">
+            <h1 class="locationText">Grant Location Access</h1>
+            <p class="locationText" id="weatherInfo">Allow Access To Get Weather Info</p>
+            <button class="GrantAcessbutton" >Grant Access</button>
+        </div>
+        
+        <!-- Loading gif -->
+        <div class="loadingGif active">
+            <img src="./assets/gif/loop-loading-GIF-by-Derek-Fitz-unscreen.gif" alt="">
+        </div>
+        
+
+        
+
+
+
+            <!-- Search Weather -->
+        <div class="searchWeatherPage active">
+            <div class="searchWeatherTab">
+                <input type="text" name="Search City" id="inputCity" placeholder="Search for City..">
+                <button class="searchButton" >
+                    <img  class="searchImage " src="./assets/images/search.svg" alt="">
+                </button>
+            </div>
+
+            <div class="searchWeather active">
+
+                <div class="mainTextDiv">
+                    <p class="mainTextM">Yavatmal</p>
+                    <!-- <img class="flag"src="https://flagsapi.com/IN/flat/64.png"> -->
+                </div>
+                <div class="tempDiv">
+                    <p class="tempParaM">28.7°</p>
+                    <p class="tempPara2">C</p>
+    
+                </div>
+    
+                <div class="attributeCollection">
+                    <div class="attribute" >
+                        <img class="windSpeedLogo"src="./assets/images/solar_wind-bold.svg" alt="">
+                        <p class="windSpeed" >Windspeed</p>
+                        <p class="windSpeedValue" id="windM">2.00m/s</p>
+                    </div>
+                    <div class="attribute" >
+                        <img class="windSpeedLogo" src="./assets/images/humidity_logo.svg" alt="">
+                        <p class="windSpeed" >Humidity</p>
+                        <p class="windSpeedValue" id="humidM">80%</p>
+                    </div>
+                    <div class="attribute" >
+                        <img class="windSpeedLogo" src="./assets/images/clouds-fill.svg" alt="">
+                        <p class="windSpeed" >Clouds</p>
+                        <p class="windSpeedValue" id="cloudM">88%</p>
+                    </div>
+                </div>
+          
+            </div >
+            
+            
+        </div>
+
+
+
+        
+
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
